@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+}
+
+:root {
+    --blue-dark: #27374D;
+    --blue-medium-dark: #526D82;
+    --blue-medium-light: #9DB2BF;
+    --blue-light: #DDE6ED;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    outline: none; 
+}
+
+.container {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) 6fr;
+    grid-template-rows: minmax(1fr, 200px) 7fr;
+}
+
+.side-bar {
+    position: sticky;
+    height: 100vh;
+    top: 0;
+    background: var(--blue-dark);
+    color: var(--blue-light);
+    grid-area: 1 / 1 / span 2 / span 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 8fr 3fr;
+    align-items: center;
+    justify-items: start;
+    padding: 0 8%;
+}
+
+.logo-container {
+    justify-self: start;
+    align-self: start;
+    padding: 15px 0;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+.features-container,
+.info-container {
+    font-size: .8em;
+    font-weight: bold;
+}
+
+.features-container > a > img,
+.info-container > a > img {
+    width: 32px;
+    height: auto;
+}
+
+.features-container {
+    padding-top: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 4em);
+    height: 100%;
+    align-items: start;
+}
+
+.info-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 4em);
+    align-items: end;
+}
+
+.side-bar > div > a {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    color: #fff;
+    text-decoration: none;
+    align-items: center;
+}
+
+.side-bar > div > a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav {
+    background: var(--blue-light);
+    color: var(--blue-dark);
+    grid-area: 1 / 2 / span 1 / span 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr  4fr;
+    align-items: center;
+    padding: 15px;
+}
+
+.first-level-nav {
+    grid-area: 1 / 1 / span 1 / span 1;
+    display: grid;
+    grid-template-columns: 10fr 1fr 3fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+.search-bar {
+    grid-area: 1 / 1 / span 1 / span 1;
+    display: grid;
+    grid-template-columns: 1fr 12fr;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-bar > label {
+    display: grid;
+    align-items: center;
+    justify-items: end;
+}
+
+.search-bar > label > img {
+    cursor: pointer;
+}
+
+#search {
+    width: 70%;
+    font-size: 1em;
+    height: 1.5em;
+    border-radius: 1em;
+    border: 0 solid;
+    background: var(--blue-medium-light);
+    color: white;
+    padding: 0 15px;
+}
+
+.notifications {
+    margin: auto;
+}
+
+.notifications > button {
+    border: 0;
+    background: var(--blue-light);
+    cursor: pointer;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    gap: 15px;
+    align-items: center;
+}
+
+.profile > img {
+    justify-self: end;
+    align-self: center;
+    width: 48px;
+    height: auto;
+}
+
+.profile > p {
+    font-size: 1em;
+    justify-self: start;
+    font-weight: bold;
+}
+
+.second-level-nav {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+}
+
+.user {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    gap: 0 30px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.user > img {
+    grid-area: 1 / 1 / span 2 / span 1;
+    justify-self: end;
+    width: 76px;
+    height: auto;
+}
+
+.user-hi {
+    margin: 0;
+    align-self: end;
+}
+
+.user-name {
+    font-size: 1.7em;
+    margin: 0;
+}
+
+.notifications > button > img,
+.search-bar > label > img {
+    width: 32px;
+    height: auto;
+}
+
+.posts-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+    align-items: end;
+}
+
+.posts-buttons > button {
+    width: 75%;
+    height: 50%;
+    background: var(--blue-medium-dark);
+    color: #fff;
+    border: 0;
+    border-radius: 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.proj-container {
+    background: var(--blue-medium-light);
+    color: var(--blue-dark);
+    grid-area: 2 / 2 / span 1 / span 1;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 0 15px;
+}
+
+.projects {
+    grid-area: 1 / 1 / span 2 / span 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr repeat(3, 5fr);
+}
+
+.projects > p {
+    grid-area: 1 / 1 / span 1 / span 2;
+    align-self: end;
+    padding-left: 4%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.proj-box {
+    background: #fff;
+    width: 80%;
+    height: 80%;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    align-self: center;
+    justify-self: center;
+    border-radius: 10px 60px 10px 60px;
+    border-left: 7px solid var(--blue-medium-dark);
+    gap: 5px;
+}
+
+.proj-title,
+.anns-title {
+    font-weight: bold;
+    align-self: end;
+}
+
+.proj-buttons {
+    justify-self: end;
+    align-self: center;
+}
+
+.proj-buttons > button {
+    background: #fff;
+    border: 0;
+    cursor: pointer;
+}
+
+.proj-buttons > button > img {
+    width: 20px;
+    height: auto;
+}
+
+.announcements-trendings {
+    grid-area: 1 / 2 / span 2 / span 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr 7fr);
+}
+
+.anns-container {
+    background: #fff;
+    width: 90%;
+    height: 87%;
+    border-radius: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    align-self: center;
+}
+
+.anns-container div:nth-child(1),
+.anns-container div:nth-child(2) {
+    border-bottom: 1px solid var(--blue-light);
+}
+
+.announcements-trendings > p {
+    align-self: end;
+    padding-left: 4%;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.trends-container {
+    background: #fff;
+    width: 90%;
+    height: 85%;
+    border-radius: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    align-self: center;
+}
+
+.trend-cell {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+.trend-cell > img {
+    grid-area: 1 / 1 / span 2 / span 1;
+    width: 48px;
+    height: auto;
+    justify-self: center;
+}
+
+.trend-user {
+    align-self: end;
+    font-weight: bold;
+}
+
+.trends-container .trend-cell:nth-child(-n+3) {
+    border-bottom: 1px solid var(--blue-light);
+}

@@ -3,73 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="container">
         <sidebar class="side-bar">
-            <div class="logo">
-                <img src="" alt="Dashboard logo">
-                <p>Dashboard</p>
+            <div class="logo-container">
+                <a href="" class="logo">
+                    <img src="Assets/ico/dashboard.png" alt="Dashboard logo">
+                    <p>Dashboard</p>
+                </a>
             </div>
-            <div class="btn-home">
-                <img src="" alt="">
-                <p>Home</p>
+            <div class="features-container">
+                <a href="" class="link-home">
+                    <img src="Assets/ico/home.png" alt="">
+                    <p>Home</p>
+                </a>
+                <a href="" class="link-profile">
+                    <img src="Assets/ico/profile.png" alt="">
+                    <p>Profile</p>
+                </a>
+                <a href="" class="link-messages">
+                    <img src="Assets/ico/messages.png" alt="">
+                    <p>Messages</p>
+                </a>
+                <a href="" class="link-history">
+                    <img src="Assets/ico/history.png" alt="">
+                    <p>History</p>
+                </a>
+                <a href="" class="link-tasks">
+                    <img src="Assets/ico/tasks.png" alt="">
+                    <p>Tasks</p>
+                </a>
+                <a href="" class="link-communities">
+                    <img src="Assets/ico/communities.png" alt="">
+                    <p>Communities</p>
+                </a>
             </div>
-            <div class="btn-profile">
-                <img src="" alt="">
-                <p>Profile</p>
-            </div>
-            <div class="btn-messages">
-                <img src="" alt="">
-                <p>Messages</p>
-            </div>
-            <div class="btn-history">
-                <img src="" alt="">
-                <p>History</p>
-            </div>
-            <div class="btn-tasks">
-                <img src="" alt="">
-                <p>Tasks</p>
-            </div>
-            <div class="btn-communities">
-                <img src="" alt="">
-                <p>Communities</p>
-            </div>
-            <div class="btn-setting">
-                <img src="" alt="">
-                <p>Settings</p>
-            </div>
-            <div class="btn-support">
-                <img src="" alt="">
-                <p>Support</p>
-            </div>
-            <div class="btn-privacy">
-                <img src="" alt="">
-                <p>Privacy</p>
+            <div class="info-container">
+                <a href="" class="link-setting">
+                    <img src="Assets/ico/settings.png" alt="">
+                    <p>Settings</p>
+                </a>
+                <a href="" class="link-support">
+                    <img src="Assets/ico/support.png" alt="">
+                    <p>Support</p>
+                </a>
+                <a href="" class="lnk-privacy">
+                    <img src="Assets/ico/privacy.png" alt="">
+                    <p>Privacy</p>
+                </a>
             </div>
         </sidebar>
         <nav class="nav">
-            <div class="search-bar">
-                <img src="" alt="">
-                <input type="text">
+            <div class="first-level-nav">
+                <div class="search-bar">
+                    <label for="search"><img src="Assets/ico/search.png" alt=""></label>
+                    <input type="text" id="search">
+                </div>
+                <div class="notifications">
+                    <button><img src="Assets/ico/notifications.png" alt=""></button>
+                </div>
+                <div class="profile">
+                    <img src="Assets/pictures/3.png" alt="">
+                    <p>Valentín Taverna</p>
+                </div>
             </div>
-            <div class="notifications">
-                <img src="" alt="">
-            </div>
-            <div class="profile">
-                <img src="" alt="">
-                <p>Valentín Taverna</p>
-            </div>
-            <div class="user">
-                <img src="" alt="">
-                <p class="user-hi">Hi there,</p>
-                <p class="user-name">Valentín Taverna (@valentave)</p>
-            </div>
-            <div class="posts-buttons">
-                <button>New</button>
-                <button>Upload</button>
-                <button>Share</button>
+            <div class="second-level-nav">
+                <div class="user">
+                    <img src="Assets/pictures/3.png" alt="">
+                    <p class="user-hi">Hi there,</p>
+                    <p class="user-name">Valentín Taverna (@valentave)</p>
+                </div>
+                <div class="posts-buttons">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
             </div>
         </nav>
         <main class="proj-container">
@@ -83,9 +95,9 @@
                         accumsan nec.
                     </p>
                     <div class="proj-buttons">
-                        <button class="fav-btn"></button>
-                        <button class="delete-btn"></button>
-                        <button class="share-btn"></button>
+                        <button class="fav-btn"><img src="Assets/ico/bookmark.png" alt="Fav"></button>
+                        <button class="delete-btn"><img src="Assets/ico/delete.png" alt="Delete"></button>
+                        <button class="share-btn"><img src="Assets/ico/share.png" alt="Share"></button>
                     </div>
                 </div>
                 <div class="proj-box">
@@ -96,9 +108,9 @@
                         ut sapien in varius pellentesque lacus.
                     </p>
                     <div class="proj-buttons">
-                        <button class="fav-btn"></button>
-                        <button class="delete-btn"></button>
-                        <button class="share-btn"></button>
+                        <button class="fav-btn"><img src="Assets/ico/bookmark.png" alt="Fav"></button>
+                        <button class="delete-btn"><img src="Assets/ico/delete.png" alt="Delete"></button>
+                        <button class="share-btn"><img src="Assets/ico/share.png" alt="Share"></button>
                     </div>
                 </div>
                 <div class="proj-box">
@@ -108,9 +120,9 @@
                         rutrum arcu, a placerat velit sagittis id.
                     </p>
                     <div class="proj-buttons">
-                        <button class="fav-btn"></button>
-                        <button class="delete-btn"></button>
-                        <button class="share-btn"></button>
+                        <button class="fav-btn"><img src="Assets/ico/bookmark.png" alt="Fav"></button>
+                        <button class="delete-btn"><img src="Assets/ico/delete.png" alt="Delete"></button>
+                        <button class="share-btn"><img src="Assets/ico/share.png" alt="Share"></button>
                     </div>
                 </div>
                 <div class="proj-box">
@@ -121,9 +133,9 @@
                         dignissim nisi in tortor commodo, ac bibendum magna tincidunt.
                     </p>
                     <div class="proj-buttons">
-                        <button class="fav-btn"></button>
-                        <button class="delete-btn"></button>
-                        <button class="share-btn"></button>
+                        <button class="fav-btn"><img src="Assets/ico/bookmark.png" alt="Fav"></button>
+                        <button class="delete-btn"><img src="Assets/ico/delete.png" alt="Delete"></button>
+                        <button class="share-btn"><img src="Assets/ico/share.png" alt="Share"></button>
                     </div>
                 </div>
                 <div class="proj-box">
@@ -134,9 +146,9 @@
                         malesuada eros.
                     </p>
                     <div class="proj-buttons">
-                        <button class="fav-btn"></button>
-                        <button class="delete-btn"></button>
-                        <button class="share-btn"></button>
+                        <button class="fav-btn"><img src="Assets/ico/bookmark.png" alt="Fav"></button>
+                        <button class="delete-btn"><img src="Assets/ico/delete.png" alt="Delete"></button>
+                        <button class="share-btn"><img src="Assets/ico/share.png" alt="Share"></button>
                     </div>
                 </div>
                 <div class="proj-box">
@@ -147,13 +159,13 @@
                         amet ex. Pellentesque mollis nec sem vel aliquam.
                     </p>
                     <div class="proj-buttons">
-                        <button class="fav-btn"></button>
-                        <button class="delete-btn"></button>
-                        <button class="share-btn"></button>
+                        <button class="fav-btn"><img src="Assets/ico/bookmark.png" alt="Fav"></button>
+                        <button class="delete-btn"><img src="Assets/ico/delete.png" alt="Delete"></button>
+                        <button class="share-btn"><img src="Assets/ico/share.png" alt="Share"></button>
                     </div>
                 </div>
             </div>
-            <div class="announcements">
+            <div class="announcements-trendings">
                 <p>Announcements</p>
                 <div class="anns-container">
                     <div>
@@ -179,27 +191,28 @@
                         </p>
                     </div>
                 </div>
-            </div>
-            <div class="trending">
-                <div class="user">
-                    <img src="" alt="">
-                    <p class="trend-user">@clover</p>
-                    <p class="trend-proj">World Peace Builder</p>
-                </div>
-                <div class="user">
-                    <img src="" alt="">
-                    <p class="trend-user">@valentave</p>
-                    <p class="trend-proj">Super Cool Project</p>
-                </div>
-                <div class="user">
-                    <img src="" alt="">
-                    <p class="trend-user">@dinosauar</p>
-                    <p class="trend-proj">Life Changing App</p>
-                </div>
-                <div class="user">
-                    <img src="" alt="">
-                    <p class="trend-user">@cheesmaster</p>
-                    <p class="trend-proj">No Traffic Maker</p>
+                <p>Trending</p>
+                <div class="trends-container">
+                    <div class="trend-cell">
+                        <img src="Assets/pictures/1.png" alt="">
+                        <p class="trend-user">@clover</p>
+                        <p class="trend-proj">World Peace Builder</p>
+                    </div>
+                    <div class="trend-cell">
+                        <img src="Assets/pictures/3.png" alt="">
+                        <p class="trend-user">@valentave</p>
+                        <p class="trend-proj">Super Cool Project</p>
+                    </div>
+                    <div class="trend-cell">
+                        <img src="Assets/pictures/2.png" alt="">
+                        <p class="trend-user">@dinosauar</p>
+                        <p class="trend-proj">Life Changing App</p>
+                    </div>
+                    <div class="trend-cell">
+                        <img src="Assets/pictures/4.png" alt="">
+                        <p class="trend-user">@chessmaster</p>
+                        <p class="trend-proj">No Traffic Maker</p>
+                    </div>
                 </div>
             </div>
         </main>
