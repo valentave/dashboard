@@ -13,4 +13,4 @@ The dashboard prototype includes the following features:
 
 ## Live Preview
 
-You can see the live previer [here](https://valentave.github.io/dashboard/).
+You can see the live preview [here](https://valentave.github.io/dashboard/).
